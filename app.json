@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "big-bolao-supabase",
+    "slug": "big-bolao-supabase",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "big-bolao-supabase"
+}
