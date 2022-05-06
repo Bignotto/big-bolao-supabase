@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, Alert } from "react-native";
-import { StatusBar } from "expo-status-bar";
-import supabase from "../lib/supabase";
+import React, { useState } from "react";
+import { View, StyleSheet } from "react-native";
 
 import { Button, Input } from "react-native-elements";
-import { User } from "@supabase/supabase-js";
-import { useAuth } from "./UserContext";
-import { AppError } from "../lib/AppError";
+import { useAuth } from "../../components/UserContext";
+import { AppError } from "../../lib/AppError";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState("");
-  const [user, setUser] = useState<User | null>(null);
 
   const { signIn } = useAuth();
 

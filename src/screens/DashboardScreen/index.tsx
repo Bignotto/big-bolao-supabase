@@ -3,9 +3,8 @@ import { View, Text, StyleSheet } from "react-native";
 import { Button, Input } from "react-native-elements";
 
 import { StatusBar } from "expo-status-bar";
-import { useAuth } from "./UserContext";
-import supabase from "../lib/supabase";
 import { Session } from "@supabase/supabase-js";
+import { useAuth } from "../../components/UserContext";
 
 export default function DashboardScreen() {
   const [mySession, setMySession] = useState<Session | null | undefined>(null);
